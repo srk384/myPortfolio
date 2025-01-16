@@ -71,7 +71,7 @@ export default function ContactForm() {
 
             <SectionHeading>Contact Me</SectionHeading>
 
-            <p className="text-gray-700 -mt-6 text-sm sm:text-base">
+            <p className="text-gray-700 mt-6 text-sm sm:text-base">
                 Please contact me directly at{" "}
                 <a className="underline" href="mailto:example@gmail.com">
                     khanshahrukh384@gmail.com
