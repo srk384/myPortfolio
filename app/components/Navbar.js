@@ -8,8 +8,9 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className='fixed top-5 left-1/2 transform -translate-x-1/2 w-[30%] backdrop-blur-sm bg-white/80 shadow-lg rounded-full z-50'>
-                <ul className='flex gap-2 justify-center px-4 py-2 font-medium'>
+            <nav className='fixed sm:top-5 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:w-[30%] backdrop-blur-sm bg-white/80 shadow-lg sm:rounded-full z-50'>
+                <ul className='flex sm:gap-2 gap-[2px] justify-center sm:py-2 py-1 font-medium flex-wrap sm:flex-nowrap text-sm sm:text-base'>
+                    
                     <Link href="#home"><li className={`nav-link transition hover:bg-gray-100 px-4 py-2 rounded-full hover:text-black  ${
                 activeSection === "home" ? "text-black font-semibold bg-gray-100" : "text-gray-700"
               }`}>Home</li></Link>

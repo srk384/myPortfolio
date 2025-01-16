@@ -19,7 +19,7 @@ const Experience = () => {
                             contentArrowStyle={{borderRight: "0.4rem solid #9ca3af"}}
                             date={item.date}
                             icon={item.icon}
-                            iconStyle={{background: "white", fontSize: "1.5rem", boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", border: "1px solid rgba(0, 0, 0, 0.05)"}}
+                            iconStyle={{background: "white", fontSize: "1.5rem", boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", border: "3px solid rgba(0, 0, 0, 0.02)"}}
                         >
                             <h3 className="font-semibold capitalize">{item.title}</h3>
                             <p className="font-normal !mt-0">{item.name}</p>

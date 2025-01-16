@@ -67,28 +67,14 @@ export default function ContactForm() {
     };
 
     return (
-        <section id="contact"
-            // ref={ref}
-            className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-            initial={{
-                opacity: 0,
-            }}
-            whileinview={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1,
-            }}
-            viewport={{
-                once: true,
-            }}>
+        <section id="contact" className="scroll-mt-28 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">
 
             <SectionHeading>Contact Me</SectionHeading>
 
-            <p className="text-gray-700 -mt-6">
+            <p className="text-gray-700 -mt-6 text-sm sm:text-base">
                 Please contact me directly at{" "}
                 <a className="underline" href="mailto:example@gmail.com">
-                khanshahrukh384@gmail.com
+                    khanshahrukh384@gmail.com
                 </a>{" "}
                 or through this form.
             </p>
@@ -126,13 +112,13 @@ export default function ContactForm() {
                     className="group flex items-center justify-center h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
                     disabled={isSubmitting}
                 >
-                    {isSubmitting ? (<div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>) : 
-                    (
-                        <>
-                            Submit{" "}
-                            <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
-                        </>
-                    )}
+                    {isSubmitting ? (<div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>) :
+                        (
+                            <>
+                                Submit{" "}
+                                <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+                            </>
+                        )}
                 </button>
             </form>
         </section>

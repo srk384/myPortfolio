@@ -13,7 +13,7 @@ export function useActiveSection(sectionIds) {
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.6, // Adjust visibility threshold
+      threshold: 0.75, // Adjust visibility threshold
     });
 
     sectionIds.forEach((id) => {

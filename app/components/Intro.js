@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => {
     return (
-        <section id="home" className="scroll-mt-32 mb-32 mt-32 max-w-[50rem] text-center sm:mb-0 ">
+        <section id="home" className="scroll-mt-32 mt-32 max-w-[50rem] text-center mb-20 sm:mb-0 ">
             <div className="flex items-center justify-center">
                 {/* <div className="relative"> */}
                 <span className="text-4xl">👋</span>
