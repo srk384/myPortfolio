@@ -35,7 +35,7 @@ const Projects = () => {
                 </div>
 
             </div>
-            <div onClick={() => handleClick("")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] mb-4 sm:mb-14 rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
+            <div onClick={() => handleClick("https://getchai.netlify.app/")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] mb-4 sm:mb-14 rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
 
                 <img src="/getmeachai.jpg" alt="" width={350} className='sm:absolute shadow-lg border rounded-lg sm:rounded-l-lg right-0 bottom-1/2 transition sm:translate-y-1/2 sm:group-hover:scale-[1.05] sm:group-hover:-rotate-2' />
 
@@ -67,7 +67,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </div>
-            <div className='text-center text-lg sm:text-xl font-semibold mt-14'>Discover additional creations beyond these three on My <a href='https://github.com/srk384' target='blank'><span className='text-green-500 underline'>GitHub!</span></a></div>
+            <div className='text-center text-lg sm:text-xl font-semibold mt-14'>Discover additional creations beyond these three on My <a href='https://github.com/srk384' target='blank'><span className='text-green-800 underline'>GitHub!</span></a></div>
         </section>
     )
 }
