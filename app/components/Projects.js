@@ -55,7 +55,7 @@ const Projects = () => {
                 </div>
 
             </div>
-            <div onClick={() => handleClick("https://clospotify.freewebhostmost.com/weather.html")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] mb-4 sm:mb-14 rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
+            <div onClick={() => handleClick("https://weatherly-black.vercel.app")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] mb-4 sm:mb-14 rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
 
                 <img src="/weatherly.jpg" alt="" width={350} className='sm:absolute shadow-lg border rounded-lg sm:rounded-r-lg left-0 bottom-1/2 transition sm:translate-y-1/2 sm:group-hover:scale-[1.05] sm:group-hover:-rotate-2' />
 
@@ -71,7 +71,7 @@ const Projects = () => {
                 </div>
 
             </div>
-            <div onClick={() => handleClick("https://clospotify.freewebhostmost.com/")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
+            <div onClick={() => handleClick("https://github.com/srk384/SpotifyClone")} className='p-1 sm:p-0 hover:cursor-pointer flex flex-col bg-gray-100 max-w-[45rem] sm:max-h-[25rem] rounded-lg relative border shadow-lg overflow-hidden hover:bg-gray-200 group my-5'>
 
                 <img src="/spotify.jpg" alt="" width={350} className='sm:absolute shadow-lg border rounded-lg sm:rounded-r-lg right-0 bottom-1/2 transition sm:translate-y-1/2 sm:group-hover:scale-[1.05] sm:group-hover:-rotate-2' />
 
