@@ -1,10 +1,12 @@
+"use client"
 import React from 'react'
 import SectionHeading from './Section-heading'
+import { motion } from 'motion/react'
 
 
 const About = () => {
     return (
-        <section className="mb-28 max-w-[45rem] text-center sm:leading-8 sm:mb-40 scroll-mt-28 text-sm leading-8 sm:text-base "
+        <motion.div className="mb-28 max-w-[45rem] text-center sm:leading-8 sm:mb-40 scroll-mt-28 text-sm leading-8 sm:text-base "
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
@@ -19,7 +21,7 @@ const About = () => {
                 knowledge extends to{" "}
                 <span className="font-medium">entrepreneurship</span>, a realm I am currently exploring.
             </p>
-        </section>
+        </motion.div>
     )
 }
 

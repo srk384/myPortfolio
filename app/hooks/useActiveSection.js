@@ -1,20 +1,23 @@
 import { useState, useEffect } from "react";
 
-export function useActiveSection(sectionIds) {
-  const [activeSection, setActiveSection] = useState("");
+const useActiveSection = (sectionIds) => {
 
+  const [activeSection, setActiveSection] = useState("");
+    
   useEffect(() => {
-    const handleIntersection = (entries) => {
+
+    const observerOptions = {
+     
+      threshold: 0.5, 
+    };
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
         }
       });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.75, // Adjust visibility threshold
-    });
+    }, observerOptions);
 
     sectionIds.forEach((id) => {
       const section = document.getElementById(id);
@@ -26,3 +29,5 @@ export function useActiveSection(sectionIds) {
 
   return activeSection;
 }
+
+export default useActiveSection;

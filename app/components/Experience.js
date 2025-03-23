@@ -3,7 +3,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import SectionHeading from './Section-heading';
-import experiencesData from '@/lib/data';
+import {experienceData} from '@/lib/data';
 
 
 const Experience = () => {
@@ -12,7 +12,7 @@ const Experience = () => {
             className="scroll-mt-28 mb-28">
             <SectionHeading>Education and Experience</SectionHeading>
             <VerticalTimeline lineColor="#f3f4f6">
-                {experiencesData.map((item, index) => (
+                {experienceData.map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
                             contentStyle={{background: "#f3f4f6", boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", border: "1px solid rgba(0, 0, 0, 0.05)", textAlign: "left", padding: "1.3rem 2rem"}}
